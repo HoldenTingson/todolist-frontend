@@ -15,7 +15,7 @@
       <h1>To Do List</h1>
       <img
         style="width: 40px; height: 48px; margin-left: 10px"
-        :src="`https://thunderous-kringle-8a9eb1.netlify.app/src/assets/img/piplup.png`"
+        :src="`/img/piplup.png`"
       />
     </div>
 
