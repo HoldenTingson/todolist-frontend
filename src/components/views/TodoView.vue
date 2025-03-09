@@ -113,14 +113,14 @@ export default {
     },
     async fetchData() {
       const response = await fetch(
-        "http://todolist-backend-production-7602.up.railway.app/task"
+        "https://todolist-backend-production-7602.up.railway.app/task"
       );
       this.tasks = await response.json();
     },
 
     async deleteTask(id) {
       await fetch(
-        `http://todolist-backend-production-7602.up.railway.app/task/${id}`,
+        `https://todolist-backend-production-7602.up.railway.app/task/${id}`,
         { method: "DELETE" }
       );
       this.tasks.data = this.tasks.data.filter((task) => task.Id !== id);

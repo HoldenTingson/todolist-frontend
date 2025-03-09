@@ -86,7 +86,7 @@ export default {
       }
 
       const response = await fetch(
-        `http://todolist-backend-production-7602.up.railway.app/task/${this.id}`,
+        `https://todolist-backend-production-7602.up.railway.app/task/${this.id}`,
         {
           method: "GET",
         }
@@ -107,7 +107,7 @@ export default {
       };
 
       await fetch(
-        `http://todolist-backend-production-7602.up.railway.app/task/${this.id}`,
+        `https://todolist-backend-production-7602.up.railway.app/task/${this.id}`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
