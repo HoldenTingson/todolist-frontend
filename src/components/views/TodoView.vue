@@ -11,7 +11,14 @@
       @close="modalEditActive = false"
       @task-updated="updateTaskInList"
     />
-    <h1>To Do List</h1>
+    <div class="title">
+      <h1>To Do List</h1>
+      <img
+        style="width: 40px; height: 48px; margin-left: 10px"
+        :src="`https://thunderous-kringle-8a9eb1.netlify.app/src/assets/img/piplup.png`"
+      />
+    </div>
+
     <br />
     <button type="primary" class="button" @click="modalAddActive = true">
       <font-awesome-icon :icon="['fas', 'plus']" class="fa-2x" /> Add Task
@@ -149,6 +156,11 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  display: flex;
+  align-items: center;
+}
+
 .table-wrapper {
   max-width: 1300px;
   border: 2px solid rgba(0, 0, 0, 0.073);
